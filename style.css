@@ -1,0 +1,647 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* text-decoration: none; */
+    /* add this by myself */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    line-height: 52px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 40px;
+    padding-left: 5px;
+    /* letter-spacing:1px; */
+    word-break: normal;
+}
+
+span.orange-subtitle {
+    color: #f27052;
+}
+
+a.active-links {
+    color: #f27052;
+}
+
+
+/* Center website  */
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-main {
+    /*padding-top:20px;*/
+    /*max-width: 1400px;*/
+    margin: auto;
+}
+
+.project-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 12px;
+}
+
+
+/* Center website END */
+
+
+/* navbar */
+
+.navbar {
+    /*  padding-top: 16px;*/
+    /* margin-bottom: 12px;*/
+    /*padding: 30px 0;*/
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    /*font-size: 18px;*/
+    position: fixed;
+    /* Set the navbar to fixed position */
+    /*  position: relative; */
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* position brand */
+
+.topnav-centered a {
+    float: left;
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.navbar a.nav-active {
+    color: #f27052;
+    /* color: black; */
+}
+
+.navbar a.navbar-white {
+    text-decoration: none;
+    color: #e3e3e3;
+    /*color: white;*/
+}
+
+.navbar a.navbar-brand {
+    /* color:#105a5f; */
+    color: #1f7b82;
+    /* color:#272727; */
+    height: inherit;
+    line-height: inherit;
+    padding: 0 24px;
+    font-size: 26px;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    letter-spacing: 2px;
+    /*margin-top: 2px;*/
+}
+
+.navbar a.navbar-brand img {
+    padding-top: 10px;
+    height: 54px;
+}
+
+.navbar ul {
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 7px 10px 0px 5px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 0 10px;
+    /* here to control the space between each menu */
+}
+
+.navbar ul li a {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    display: block;
+    text-align: center;
+    min-width: 80px;
+    padding: 0 10px;
+}
+
+.navbar ul li a:hover {
+    color: #f27052;
+}
+
+.dropdown-content {
+    /* background-color: pink; */
+    display: none;
+    z-index: 1;
+}
+
+.navbar ul li a.dropdown-a {
+    float: none;
+    display: block;
+    position: relative;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar .navbar-toggler {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .dropdown-content {
+        position: absolute;
+    }
+    .navbar ul li a.dropdown-a {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding-top: 0;
+        /*background-color: rgba(255,255,255,0.2);*/
+    }
+    .navbar a {
+        text-align: center;
+    }
+    .navbar a.navbar-white {
+        color: grey;
+    }
+    .navbar ul {
+        width: 100%;
+        padding: 0;
+        background-color: #fcfcfc;
+        /*background-color: grey;*/
+        /* height: auto; */
+        height: 100vh;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+    }
+    #dark-nav-bg {
+        background-color: #272727;
+    }
+    .navbar ul.open {
+        max-height: 100vh;
+    }
+    .navbar ul li {
+        position: relative;
+        top: 25%;
+        /*text-align: center;*/
+        /*margin-top: 30px;*/
+        width: 100%;
+        /*border-bottom: 1px solid rgba(255,255,255,0.3);*/
+    }
+    .navbar ul li a {
+        /*padding: 0;*/
+        /*padding-left:50px;*/
+        font-size: 36px;
+        font-weight: 800;
+    }
+    .navbar .navbar-toggler {
+        display: block;
+        position: absolute;
+        height: 24px;
+        top: 19px;
+        right: 20px;
+        background-color: transparent;
+        /*     color: grey; */
+        /*     border: 3px solid #fff; */
+        border: none;
+        /* border-radius: 4px; */
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+    .navbar .navbar-toggler span,
+    .navbar .navbar-toggler span::before,
+    .navbar .navbar-toggler span::after {
+        display: block;
+        content: '';
+        background-color: black;
+        height: 3px;
+        width: 24px;
+        /*border-radius: 4px;*/
+        transition: all ease-in-out 0.3s;
+    }
+    .navbar .navbar-toggler span::before {
+        transform: translateY(-8px);
+    }
+    .navbar .navbar-toggler span::after {
+        transform: translateY(5px);
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span {
+        /* transform: rotate(90deg); */
+        background-color: transparent;
+        /* transform: scale(0.85) rotate(270deg); */
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span::before {
+        transform: translateY(0px) rotate(45deg);
+        /* transform: translateY(0px) scale(0.75) rotate(45deg); */
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span::after {
+        transform: translateY(-3px) rotate(-45deg);
+        /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+    }
+    .fun {
+        display: none;
+    }
+}
+
+
+/* navbar END */
+
+
+/* Home page sections */
+
+
+/* scroll to top button */
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 24px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: transparent;
+    /* Set a background color */
+    /*color: grey; !* Text color *!*/
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    /*padding: 15px; !* Some padding *!*/
+    /*border-radius: 10px; !* Rounded corners *!*/
+    /*font-size: 18px; !* Increase font size *!*/
+}
+
+#myBtn:hover {
+    /*background-color: #555; !* Add a dark-grey background on hover *!*/
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+/* scroll to top button END */
+
+
+/* footer and copyright */
+
+.containerCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 16px;
+    width: 100%;
+}
+
+#bottom {
+    bottom: 0;
+    letter-spacing: .04em;
+    /*font-size: small;*/
+    font-size: 16px;
+    margin-top: 200px;
+    margin-bottom: 24px;
+    color: lightgrey;
+    /*width: 100%;*/
+}
+
+
+/* footer and copyright END */
+
+
+/*  parallax effect, parallax video effect */
+
+
+/* 
+
+.header-image1 {
+    background-image: url('1neos-1.jpg');
+}
+
+.header-image8 {
+    background-image: url('play-muscle.mp4');
+}
+*/
+
+
+/* somehow the above video header parallax is working in safari but not chrome */
+
+
+/*
+@media (max-width: 800px) {
+    header {
+        height: 45%;
+        background-attachment: scroll;
+        /*background-size: contain;*/
+
+
+/*  }}
+
+*/
+
+
+/* parallax effect END */
+
+
+/* this wrapper is important, although I don't understand... 
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+*/
+
+.fun {
+    font-family: 'Overpass Mono', monospace;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 84px;
+    font-size: 72px;
+    position: absolute;
+    /*text-align: center;*/
+    z-index: 9999;
+    color: #1f7b82;
+    /*text-shadow: 0 0 10px lightgray;*/
+    /*color:lightgray;*/
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#video-bg {
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.intro-text {
+    display: flex;
+    padding: 180px 150px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.intro-text p {
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.5px;
+}
+
+.youtube {
+    margin: auto;
+    text-align: center;
+    max-width: 1300px;
+    padding: 0 40px 50px;
+}
+
+@media screen and (min-width: 1300px) {
+    .fun {
+        line-height: 96px;
+        font-size: 84px;
+        top: 50%;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    header {
+        width: 100%;
+        background-color: grey;
+        height: 100%;
+        margin: 0;
+        background-attachment: fixed;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .video-container {
+        background-color: #f1a5a5;
+        z-index: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    div.rows {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .fun {
+        line-height: 48px;
+        font-size: 48px;
+        top: 40%;
+    }
+    .intro-text {
+        padding: 100px 100px;
+    }
+    .intro-text p {
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.5px;
+    }
+    p .full-text p {
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 0.5px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-text {
+        padding: 80px 40px;
+    }
+    .intro-text p .full-text p {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+    .full-text {
+        padding: 0 40px;
+        width: 100%;
+    }
+    p .full-text p {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+    }
+}
+
+
+/* Homepage image grid */
+
+.rows {
+    margin: 4px 0;
+}
+
+
+/* Add padding BETWEEN each column */
+
+.rows,
+.rows>.columns {
+    /* do not understand, why use ">" */
+    padding: 12px 12px;
+}
+
+
+/* Create two equal columns that sits next to each other */
+
+.columns {
+    float: left;
+    padding-left: 0;
+}
+
+.col-img {
+    width: 40%;
+}
+
+.col-text {
+    width: 60%;
+}
+
+.full-text {
+    width: 100%;
+    padding: 60px;
+}
+
+
+/* Clear floats after rows */
+
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.con-text {
+    padding: 20px 20px 20px 40px;
+    width: 90%;
+}
+
+.con-img {
+    padding: 30px;
+}
+
+
+/* Add padding BETWEEN each column */
+
+
+/* Responsive layout -  two column-layout */
+
+
+/*
+@media screen and (max-width: 800px) {
+    .columns {
+        width: 50%;
+    }
+}
+*/
+
+
+/* Responsive layout - one column */
+
+@media screen and (max-width: 768px) {
+    .columns {
+        width: 100%;
+    }
+    .col-img {
+        width: 100%;
+    }
+    .col-text {
+        width: 100%;
+    }
+    .intro-text {
+        padding: 80px 40px;
+    }
+    .intro-text p .full-text p {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+    .full-text {
+        padding: 0 40px;
+        width: 100%;
+    }
+    p .full-text p {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+    }
+}
+
+
+/* Homepage image grid END*/
