@@ -28,6 +28,30 @@ body {
     background-color: white;
 }
 
+h1 {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    font-size: 100px;
+    color: black;
+    letter-spacing: 4px;
+    top: 47%;
+    transform: translateY(-50%);
+    position: relative;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: black;
+    padding: 28px;
+    bottom: 90px;
+    transform: translateY(-100%);
+    position: relative;
+}
+
 h2 {
     font-size: 40px;
     font-weight: 400;
@@ -41,7 +65,7 @@ p {
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 40px;
-    padding-left: 5px;
+    padding-left: 3px;
     /* letter-spacing:1px; */
     word-break: normal;
 }
@@ -409,15 +433,10 @@ a.active-links {
 */
 
 .fun {
-    font-family: 'Overpass Mono', monospace;
-    font-weight: 800;
     letter-spacing: 1px;
-    line-height: 84px;
-    font-size: 72px;
     position: absolute;
     /*text-align: center;*/
     z-index: 9999;
-    color: #1f7b82;
     /*text-shadow: 0 0 10px lightgray;*/
     /*color:lightgray;*/
     top: 45%;
@@ -645,3 +664,87 @@ a.active-links {
 
 
 /* Homepage image grid END*/
+
+
+/* full screen scroll  */
+
+
+/* Backgrounds will cover all the section
+	* --------------------------------------- */
+
+.section {
+    background-size: cover;
+}
+
+
+/* Defining each section background and styles
+	* --------------------------------------- */
+
+#section0 {
+    background-image: url(./img2/1.png);
+}
+
+#section1 {
+    background-image: url(./img2/24.png);
+    padding: 6% 0 0 0;
+}
+
+#section2 {
+    background-image: url(./img2/26.png);
+    padding: 6% 0 0 0;
+}
+
+#section3 {
+    background-image: url(./img2/5.png);
+    padding: 6% 0 0 0;
+}
+
+#section4 {
+    background-image: url(./img2/25.png);
+    padding: 6% 0 0 0;
+}
+
+#section5 {
+    background-image: url(./img2/3.png);
+    padding: 6% 0 0 0;
+}
+
+#section6 {
+    padding: 6% 0 0 0;
+}
+
+
+/* application*/
+
+#section7 {
+    background-image: url(./img2/24.png);
+}
+
+#section8 {
+    background-image: url(./img2/7.png);
+    padding: 6% 0 0 0;
+}
+
+#section9 {
+    background-image: url(./img2/4.png);
+    padding: 6% 0 0 0;
+}
+
+#section10 {
+    background-image: url(./img2/13.png);
+    padding: 6% 0 0 0;
+}
+
+#section11 {
+    background-image: url(./img2/22.png);
+    padding: 6% 0 0 0;
+}
+
+#section12 {
+    background-image: url(./img2/14.png);
+    padding: 6% 0 0 0;
+}
+
+#section13 {
+    padding: 6% 0 0 0;
+}

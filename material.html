@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>material repeel</title>
+    <link rel="shortcut icon" href=" " type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!--  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class=" ">
+            <!-- Navbar -->
+
+            <nav class="navbar">
+                <div class="nav-main">
+                    <div class="topnav-centered">
+                        <a href="index.html" class="navbar-brand"><img src="./img/logo3.png" alt="repeel" class=" "></a>
+                        <!--<a href="#" class="navbar-brand"><img src="" style="width: 50px; vertical-align: middle;">ningyuan xu</a>-->
+                    </div>
+
+                    <ul>
+                        <li><a href=" " class=" ">Material</a></li>
+                        <!--  <li><a href=" ">Inspiration</a></li>  -->
+
+                        <li class="dropdown "><a href=" " class=" ">
+                            Inspiration</a>
+                            <div class="dropdown-content">
+                                <a href="texture.html" class="dropdown-a ">Texture</a>
+                                <a href="application.html" class="dropdown-a ">Application</a>
+                            </div>
+
+                        </li>
+
+                        <li><a href=" ">Journal</a></li>
+                        <li><a href=" ">About</a></li>
+                    </ul>
+                    <button class="navbar-toggler">
+                            <span>     </span>
+                        </button>
+                </div>
+
+                <!-- Navbar toggler script-->
+                <script>
+                    const navbarToggler = document.querySelector(".navbar-toggler");
+                    const navbarMenu = document.querySelector(".navbar ul");
+                    const navbarLinks = document.querySelectorAll(".navbar a");
+
+                    navbarToggler.addEventListener("click", navbarTogglerClick);
+
+                    function navbarTogglerClick() {
+                        navbarToggler.classList.toggle("open-navbar-toggler");
+                        navbarMenu.classList.toggle("open");
+                    }
+
+                    // navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+                    function navbarLinkClick() {
+                        if (navbarMenu.classList.contains("open")) {
+                            navbarToggler.click();
+                        }
+                    }
+                </script>
+
+            </nav>
+
+            <div class="fun">
+                <!--  <img src="./img/logo3.png" alt="repeel" class=" "> -->
+                <h1>The Material</h1>
+            </div>
+
+            <div class="video-container">
+                <video autoplay muted loop id="video-bg">
+                <source src="head.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Page content -->
+
+
+
+
+    <div class="main">
+        <br><br> <br><br><br>
+        <div class="rows ">
+            <!-- Line1 Left -->
+            <div class="columns col-text">
+                <div class="con-text" style="padding: 0;">
+                    <h2> Material capability</h2>
+                    <br>
+                    <p> Banana and orange peel or soy-milk are combined with a natural binding agent as the substrate. The resulting composite is fully biodegradable and can be easily reused after the re-cooking process.</p>
+                </div>
+            </div>
+            <!-- Line1 END -->
+        </div>
+        <!-- ROW1 END -->
+        <br><br>
+        <div class="rows ">
+            <img src="./img/material.png" alt="LifeCycle1 Biowaste" style="width:100%">
+        </div>
+        <br> <br><br><br>
+
+        <div class="rows ">
+            <!-- Line1 Left -->
+            <div class="columns col-text">
+                <div class="con-text" style="padding: 0;">
+                    <h2>Classic Editions</h2>
+                </div>
+            </div>
+            <!-- Line1 END -->
+        </div>
+
+
+        <div class="rows">
+            <!-- Line2 right -->
+            <div class="columns" style="width:50%">
+                <div class=" ">
+                    <img src="./img2/29.png" alt="LifeCycle1 Biowaste" style="width:90%">
+                    <h2 style="font-size: 28px; padding: 30px 0 0 0;"> Original</h2>
+                    <p> Banana and orange peel or soy-milk</p>
+                </div>
+            </div>
+            <!-- Line2 Left -->
+            <div class="columns" style="width:50%">
+                <div class=" ">
+                    <img src="./img2/28.png" alt="LifeCycle1 Biowaste" style="width:90%">
+                    <h2 style="font-size: 28px; padding: 30px 0 0 0;"> Refruit</h2>
+                    <p> Banana and orange peel or soy-milk</p>
+                </div>
+            </div>
+            <!-- Line2 END -->
+        </div>
+        <!-- ROW2 END -->
+
+        <br><br><br>
+        <!-- Summary -->
+        <div class="columns full-text" style="padding: 24px;">
+            <div class=" ">
+                <p> Resulting composite is fully biodegradable and can be easily reused after the re-cooking process. It is a 100% bio-degradable, zero waste natural product. Moreover, the bio-material provides similar toughness, durability and water resistance
+                    as normal leather material, especially it conserves fruitiness smell, refined texture and feels very good on touch.
+                </p>
+            </div>
+        </div>
+        <br><br><br><br><br>
+
+    </div>
+    <!--  End of grid-->
+
+
+
+
+
+
+
+    <!-- End of Lifecycle Section -->
+
+
+
+
+    <!-- Menu Section -->
+
+
+    <!-- Contact Section -->
+
+
+
+    <!-- End page content -->
+
+
+    <!-- scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <svg width="30px" height="20px" viewBox="0 0 32 18" xml:space="preserve" >
+                <!-- stroke-dasharray="5,5" -->
+            <polyline fill="none" stroke="black"  stroke-width="3"  points="
+            1,18 16,1 31,18 "/>
+            </svg>
+        </button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- footer -->
+    <footer>
+        <div class="containerCenter">
+            <p id="bottom" style="color:black; text-align: center; line-height: 36px; font-size:18px; font-weight: 400; letter-spacing: 1px;">
+                <a title="" href="https://www.instagram.com" class="socialmeida-a" target="_blank" rel="nofollow noopener noreferrer ">
+                    <span style="font-size:28px; text-decoration: none; color:black;" class="fa fa-instagram"></span></a><br>
+                <a href="#" style="text-decoration: none;"></a>Impressum</a><br><br>© 2020 repeel ™ reserved<br>
+
+            </p>
+        </div>
+    </footer>
+    <!-- footer END -->
+
+
+</body>
+
+</html>
