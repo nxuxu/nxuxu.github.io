@@ -7,7 +7,6 @@
 }
 
 body,
-h1,
 h2,
 h3,
 h4,
@@ -580,11 +579,11 @@ a.active-links {
 }
 
 .col-img {
-    width: 40%;
+    width: 50%;
 }
 
 .col-text {
-    width: 60%;
+    width: 50%;
 }
 
 .full-text {

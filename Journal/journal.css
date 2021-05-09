@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 180px;
+}
+
+div {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #121212;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    line-height: 52px;
+}
+
+p {
+    text-indent: 50px;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 40px;
+    padding-left: 0px;
+    word-break: normal;
+}
+
+.journal-time {
+    float: right;
+}
+
+.journal-img {
+    padding-top: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: #008CBA;
+}
