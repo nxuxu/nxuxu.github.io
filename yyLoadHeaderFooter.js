@@ -1,5 +1,5 @@
 function loadHeaderFooter() {
-    fetch("yyHeader.html")
+    fetch("/yyHeader.html")
         .then(response => {
             return response.text()
         })
@@ -8,7 +8,7 @@ function loadHeaderFooter() {
             navbarTogglerInit();
         });
 
-    fetch("yyFooter.html")
+    fetch("/yyFooter.html")
         .then(response => {
             return response.text()
         })
@@ -16,7 +16,7 @@ function loadHeaderFooter() {
             document.querySelector("footer").innerHTML = data;
         });
 
-    fetch("yyTop.html")
+    fetch("/yyTop.html")
         .then(response => {
             return response.text()
         })

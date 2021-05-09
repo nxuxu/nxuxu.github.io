@@ -1,22 +1,23 @@
-* {
+.main * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
-}
-
-.main {
     max-width: 1000px;
     margin: auto;
     padding-top: 180px;
 }
 
-div {
+header .navbar {
+    position: sticky;
+}
+
+.main div {
     border: 1px solid gray;
     padding: 10px;
 }
 
-h1 {
+.main h1 {
     text-align: center;
     text-transform: uppercase;
     color: #121212;
@@ -27,7 +28,7 @@ h1 {
     line-height: 52px;
 }
 
-p {
+.main p {
     text-indent: 50px;
     font-size: 24px;
     font-weight: 300;
@@ -37,15 +38,15 @@ p {
     word-break: normal;
 }
 
-.journal-time {
+.main .journal-time {
     float: right;
 }
 
-.journal-img {
+.main .journal-img {
     padding-top: 60px;
 }
 
-a {
+.main a {
     text-decoration: none;
     color: #008CBA;
 }

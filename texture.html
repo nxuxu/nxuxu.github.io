@@ -20,6 +20,8 @@
 
     <script type="text/javascript" src="fullpage.min.js"></script>
 
+    <!-- Loading the header and footer (AJAX) -->
+    <script src="/yyLoadHeaderFooter.js"></script>
 
 </head>
 
@@ -27,58 +29,9 @@
 <body>
 
     <!-- Navbar -->
+    <header>
 
-    <nav class="navbar">
-        <div class="nav-main">
-            <div class="topnav-centered">
-                <a href="index.html" class="navbar-brand"><img src="./img/logo3.png" alt="repeel" class=" "></a>
-                <!--<a href="#" class="navbar-brand"><img src="" style="width: 50px; vertical-align: middle;">ningyuan xu</a>-->
-            </div>
-
-            <ul>
-                <li><a href="material.html" class=" ">Material</a></li>
-                <!--  <li><a href=" ">Inspiration</a></li>  -->
-
-                <li class="dropdown"><a href="#inspiration" class=" ">
-                    Inspiration</a>
-                    <div class="dropdown-content">
-                        <a href="texture.html" class="dropdown-a ">Texture</a>
-                        <a href="application.html" class="dropdown-a ">Application</a>
-                    </div>
-
-                </li>
-
-                <li><a href="#journal">Journal</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-            <button class="navbar-toggler">
-                    <span>     </span>
-                </button>
-        </div>
-
-        <!-- Navbar toggler script-->
-        <script>
-            const navbarToggler = document.querySelector(".navbar-toggler");
-            const navbarMenu = document.querySelector(".navbar ul");
-            const navbarLinks = document.querySelectorAll(".navbar a");
-
-            navbarToggler.addEventListener("click", navbarTogglerClick);
-
-            function navbarTogglerClick() {
-                navbarToggler.classList.toggle("open-navbar-toggler");
-                navbarMenu.classList.toggle("open");
-            }
-
-            // navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
-
-            function navbarLinkClick() {
-                if (navbarMenu.classList.contains("open")) {
-                    navbarToggler.click();
-                }
-            }
-        </script>
-
-    </nav>
+    </header>
     <!-- END nav  -->
 
     <!-- page content -->
@@ -91,7 +44,7 @@
 
 
         <div class="section" id="section1">
-
+            <h4>Cutted Pattern, WS19<br />Texture, Laser Cut, CJ-N8-09</h4>
 
 
         </div>
@@ -120,11 +73,7 @@
 
         </div>
 
-        <div class="section" id="section6">
 
-            <h4>Cutted Pattern, WS19<br />Texture, Laser Cut, CJ-N8-09</h4>
-
-        </div>
     </div>
 
 
@@ -145,44 +94,14 @@
 
 
     <!-- scroll to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <svg width="30px" height="20px" viewBox="0 0 32 18" xml:space="preserve" >
-                <!-- stroke-dasharray="5,5" -->
-            <polyline fill="none" stroke="black"  stroke-width="3"  points="
-            1,18 16,1 31,18 "/>
-            </svg>
-        </button>
+    <button id="myBtn" title="Go to top">
+    </button>
 
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            scrollFunction()
-        };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 
     <!-- footer -->
     <footer>
-        <div class="containerCenter">
-            <p id="bottom" style="color:dimgray; text-align: center; line-height: 36px;">
-                <a title="" href="https://www.instagram.com" class="socialmeida-a" target="_blank" rel="nofollow noopener noreferrer ">
-                    <span style="font-size:24px; text-decoration: none; color:rgb(133, 133, 133);" class="fa fa-instagram"></span></a><br>
-                <a href="#" style="text-decoration: none;"></a>Impressum</a><br><br>© 2020 repeel ™ reserved<br>
-            </p>
-        </div>
+
     </footer>
     <!-- footer END -->
 
