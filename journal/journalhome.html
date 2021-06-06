@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>repeel</title>
+    <link rel="shortcut icon" href=" " type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!--  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Loading the header and footer (AJAX) -->
+    <script src="/yyLoadHeaderFooter.js"></script>
+
+    <!-- Masonry -->
+    <script src="masonry.pkgd.min.js"></script>
+    <script src="imagesloaded.pkgd.min.js"></script>
+    <style type="text/css">
+        .grid { width: 100%; max-width: 1200px; margin: auto;}
+        /*.grid-item { width: 48%; margin-left: 1%; margin-right: 1%;}*/
+        .grid-item { width: 50%; padding: 20px;}
+
+        .grid-item img {width: 100%;}
+
+        @media (max-width: 768px) {
+            .grid-item { width: 96%; margin-left: 2%; margin-right: 2%;}
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+    </header>
+
+    <div style="height: 45px;">
+    </div>
+    <!-- Page content -->
+
+    <div class="grid">
+        <div class="grid-item">
+            <img src="design_impact_conference.jpeg">
+            <p class=""> Design Impact Conference</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="hyundai_motorstudio.jpeg">
+            <p class=""> Hyundai Motorstudio x ARS ELECTRONICA</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="raum_und_wohnen.jpeg">
+            <p class=""> RAUM UND WOHNEN</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="potentiale.png">
+            <p class=""> POTENTIALe Messe & Festival</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="dutch_design_week.jpeg">
+            <p class=""> Dutch Design Week</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="modern_weekly.jpeg">
+            <p class=""> MODERN WEEKLY</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="xian_workshop.jpeg">
+            <p class=""> XI‘AN WORKSHOP</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="milan_design_week.jpeg">
+            <p class=""> Milan Deisgn Week</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="neue_textile_welten.jpeg">
+            <p class=""> “Neue Textile Welten”</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="nike_department_berlin.jpeg">
+            <p class=""> NIKE DEPARTMENT BERLIN</p>
+        </div>
+    </div>
+
+
+
+    <!-- End page content -->
+
+
+    <!-- scroll to top button -->
+    <button id="myBtn" title="Go to top">
+            
+    </button>
+
+
+    <!-- footer -->
+    <footer style="margin-top: -100px;">
+    </footer>
+    <!-- footer END -->
+
+    <script>
+        var elem = document.querySelector('.grid');
+        var msnry = new Masonry(elem, {
+          // options
+          itemSelector: '.grid-item',
+          percentPosition: true
+        });
+        var imgLoad = imagesLoaded(elem);
+        imgLoad.on('progress', function() {
+          msnry.layout();
+        });
+    </script>
+</body>
+
+</html>
