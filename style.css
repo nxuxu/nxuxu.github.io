@@ -474,6 +474,14 @@ a.active-links {
     height: 100vh;
 }
 
+div.slide {
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 .intro-text {
     display: flex;
     padding: 180px 150px;
