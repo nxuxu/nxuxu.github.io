@@ -544,6 +544,28 @@ div.slide .text-size {
     padding: 0 40px 50px;
 }
 
+input[type=email] {
+  width: max(800px, 50vw);
+  padding: 16px 32px;
+  margin: 4px 2px;
+  box-sizing: border-box;
+  border: 2px solid #4CAF50;
+  background: transparent;
+  font-size: 24px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 18px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
 @media screen and (min-width: 1300px) {
     .fun {
         line-height: 96px;
