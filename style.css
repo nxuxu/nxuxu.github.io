@@ -497,6 +497,12 @@ div.slide .vcenter {
     transform: translateY(-50%);
 }
 
+div.slide .hcenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 div.slide .left {
     margin-left: 7%;
     width: 23%;
