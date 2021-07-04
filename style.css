@@ -200,6 +200,11 @@ a.active-links {
     color: #f27052;
 }
 
+.navbar #ins-icon {
+    height: 22px;
+    margin-bottom: -4px;
+}
+
 .dropdown-content {
     /* background-color: pink; */
     display: none;
@@ -316,6 +321,10 @@ a.active-links {
     .navbar .navbar-toggler.open-navbar-toggler span::after {
         transform: translateY(-3px) rotate(-45deg);
         /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+    }
+    .navbar #ins-icon {
+        height: 36px;
+        margin-bottom: 0;
     }
     .fun {
         display: none;
@@ -475,11 +484,38 @@ a.active-links {
 }
 
 div.slide {
-    height: 800px;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+}
+
+div.slide .left {
+    margin-left: 7%;
+    width: 23%;
+    position: absolute;
+}
+
+div.slide .right {
+    margin-left: 45%;
+    width: 45%;
+    position: absolute;
+}
+
+div.slide .white {
+    color: white;
+}
+
+div.slide .title-size {
+    font-size: 56px;
+    line-height: normal;
+}
+
+div.slide .text-size {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 400;
 }
 
 .intro-text {
