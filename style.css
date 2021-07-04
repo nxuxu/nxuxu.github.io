@@ -491,6 +491,12 @@ div.slide {
     position: relative;
 }
 
+div.slide .vcenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 div.slide .left {
     margin-left: 7%;
     width: 23%;
