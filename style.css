@@ -11,7 +11,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     /*  font-family: 'Work Sans', sans-serif;  */
     font-family: 'Roboto', sans-serif;
 }
@@ -164,8 +165,9 @@ a.active-links {
 }
 
 .navbar a.navbar-brand img {
-    padding-top: 10px;
-    height: 54px;
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 48px;
 }
 
 .navbar ul {
@@ -173,7 +175,7 @@ a.active-links {
     list-style: none;
     height: inherit;
     line-height: inherit;
-    padding: 7px 100px 0px 5px;
+    padding: 7px 60px 0px 5px;
     /*  text-align: center; */
 }
 
@@ -440,9 +442,13 @@ a.active-links {
     z-index: 9999;
     /*text-shadow: 0 0 10px lightgray;*/
     /*color:lightgray;*/
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.fun p {
+    text-align: center;
 }
 
 #video-bg {
@@ -492,7 +498,7 @@ a.active-links {
     .fun {
         line-height: 96px;
         font-size: 84px;
-        top: 50%;
+        top: 75%;
     }
 }
 
