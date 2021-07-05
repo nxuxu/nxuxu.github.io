@@ -24,5 +24,5 @@ function playNextGif() {
 function delayAndPlayNextGif() {
     setTimeout(function(){
         playNextGif();
-    }, 2000);
+    }, 1000);
 };
