@@ -1,45 +1,51 @@
 function loadHeaderFooter() {
-    fetch("/yyHeader.html")
-        .then(response => {
-            return response.text()
-        })
-        .then(data => {
-            document.querySelector("header").innerHTML = data;
-            navbarTogglerInit();
-        });
+    if (document.querySelector("header")) {
+        fetch("/yyHeader.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+                navbarTogglerInit();
+            });
+    }
 
-    fetch("/yyFooter.html")
-        .then(response => {
-            return response.text()
-        })
-        .then(data => {
-            document.querySelector("footer").innerHTML = data;
-        });
+    if (document.querySelector("footer")) {
+        fetch("/yyFooter.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    }
 
-    fetch("/yyTop.html")
-        .then(response => {
-            return response.text()
-        })
-        .then(data => {
+    if (document.querySelector("myBtn")) {
+        fetch("/yyTop.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
 
-            const myBtn = document.getElementById("myBtn");
+                const myBtn = document.getElementById("myBtn");
 
-            myBtn.innerHTML = data;
+                myBtn.innerHTML = data;
 
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = scrollFunction;
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.addEventListener("scroll", scrollFunction);
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    myBtn.style.display = "block";
-                } else {
-                    myBtn.style.display = "none";
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        myBtn.style.display = "block";
+                    } else {
+                        myBtn.style.display = "none";
+                    }
                 }
-            }
 
-            myBtn.addEventListener("click", topFunction);
+                myBtn.addEventListener("click", topFunction);
 
-        });
+            });
+    }
 }
 
 function navbarTogglerInit() {
