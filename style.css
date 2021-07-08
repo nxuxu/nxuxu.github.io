@@ -460,6 +460,7 @@ a.active-links {
 .fun p {
     text-align: center;
     font-size: 30px;
+    line-height: 46px;
 }
 
 #video-bg {
@@ -506,7 +507,7 @@ div.slide .hcenter {
 }
 
 div.slide .left {
-    margin-left: 7%;
+    margin-left: 12%;
     width: 23%;
     position: absolute;
 }
