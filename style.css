@@ -165,9 +165,9 @@ a.active-links {
 }
 
 .navbar a.navbar-brand img {
-    padding-top: 12px;
+    padding-top: 14px;
     padding-left: 0px;
-    height: 50px;
+    height: 52px;
 }
 
 .navbar ul {
@@ -175,7 +175,7 @@ a.active-links {
     list-style: none;
     height: inherit;
     line-height: inherit;
-    padding: 7px 60px 0px 5px;
+    padding: 7px 40px 0px 5px;
     /*  text-align: center; */
 }
 
@@ -197,7 +197,7 @@ a.active-links {
 }
 
 .navbar ul li a:hover {
-    color: #7FA3CC;
+    color: #1c3a13;
     /* text-decoration: underline; */
 }
 
@@ -507,7 +507,7 @@ div.slide .hcenter {
 }
 
 div.slide .left {
-    margin-left: 12%;
+    margin-left: 9%;
     width: 23%;
     position: absolute;
 }
