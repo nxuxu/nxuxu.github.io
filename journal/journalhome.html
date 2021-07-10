@@ -21,14 +21,28 @@
     <script src="masonry.pkgd.min.js"></script>
     <script src="imagesloaded.pkgd.min.js"></script>
     <style type="text/css">
-        .grid { width: 100%; max-width: 1200px; margin: auto;}
+        .grid {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
         /*.grid-item { width: 48%; margin-left: 1%; margin-right: 1%;}*/
-        .grid-item { width: 50%; padding: 20px;}
-
-        .grid-item img {width: 100%;}
-
+        
+        .grid-item {
+            width: 50%;
+            padding: 20px;
+        }
+        
+        .grid-item img {
+            width: 100%;
+        }
+        
         @media (max-width: 768px) {
-            .grid-item { width: 96%; margin-left: 2%; margin-right: 2%;}
+            .grid-item {
+                width: 96%;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
         }
     </style>
 </head>
@@ -41,7 +55,7 @@
 
     </header>
 
-    <div style="height: 45px;">
+    <div style="height: 145px;">
     </div>
     <!-- Page content -->
 
@@ -116,13 +130,13 @@
     <script>
         var elem = document.querySelector('.grid');
         var msnry = new Masonry(elem, {
-          // options
-          itemSelector: '.grid-item',
-          percentPosition: true
+            // options
+            itemSelector: '.grid-item',
+            percentPosition: true
         });
         var imgLoad = imagesLoaded(elem);
         imgLoad.on('progress', function() {
-          msnry.layout();
+            msnry.layout();
         });
     </script>
 </body>
