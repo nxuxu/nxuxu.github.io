@@ -42,11 +42,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function playNextGif() {
     playNextGif.counter = playNextGif.counter || 0; // black magic
-    gifArray[playNextGif.counter].currentTime = 0;
-    gifArray[playNextGif.counter].play();
-    playNextGif.counter += 1;
-    if(playNextGif.counter >= gifArray.length) {
-        playNextGif.counter = 0;
+    if (playNextGif.counter <= gifArray.length) {
+        if (playNextGif.counter < gifArray.length) {
+            let currentGif = gifArray[playNextGif.counter];
+            currentGif.play(); // start the next gif
+        }
+        if (playNextGif.counter > 0) {
+            // reload the last gif and let it run on
+            reloadAndSetLoop(playNextGif.counter - 1);
+        }
+        playNextGif.counter += 1;
     }
 }
 
@@ -55,3 +60,10 @@ function delayAndPlayNextGif() {
         playNextGif();
     }, 1000);
 };
+
+function reloadAndSetLoop(index) {
+    let currentGif = gifArray[index];
+    currentGif.setAttribute("loop", "");
+    currentGif.currentTime = 0;
+    currentGif.play();
+}
