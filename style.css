@@ -790,52 +790,132 @@ input[type=reset] {
 	* --------------------------------------- */
 
 #section0 {
-    background-image: url(./img2/1.png);
+    background-image: url(./img2/t1.jpg);
 }
 
 #section1 {
-    background-image: url(./img2/24.png);
+    background-image: url(./img2/t2.jpg);
 }
 
 #section2 {
-    background-image: url(./img2/26.png);
+    background-image: url(./img2/t3.jpg);
 }
 
 #section3 {
-    background-image: url(./img2/5.png);
+    background-image: url(./img2/t4.jpg);
 }
 
 #section4 {
-    background-image: url(./img2/25.png);
+    background-image: url(./img2/t5.jpg);
 }
 
 #section5 {
-    background-image: url(./img2/3.png);
+    background-image: url(./img2/t6.jpg);
+}
+
+#section6 {
+    background-image: url(./img2/t7.jpg);
+}
+
+#section7 {
+    background-image: url(./img2/t8.jpg);
+}
+
+#section8 {
+    background-image: url(./img2/t9.jpg);
+}
+
+#section9 {
+    background-image: url(./img2/t10.jpg);
+}
+
+#section10 {
+    background-image: url(./img2/t11.jpg);
+}
+
+#section11 {
+    background-image: url(./img2/t12.jpg);
+}
+
+#section12 {
+    background-image: url(./img2/t13.jpg);
+}
+
+#section13 {
+    background-image: url(./img2/t14.jpg);
+}
+
+#section14 {
+    background-image: url(./img2/t15.jpg);
+}
+
+#section15 {
+    background-image: url(./img2/t16.jpg);
+}
+
+#section16 {
+    background-image: url(./img2/t17.jpg);
+}
+
+#section17 {
+    background-image: url(./img2/t18.jpg);
 }
 
 
 /* application*/
 
-#section7 {
-    background-image: url(./img2/24.png);
+#section21 {
+    background-image: url(./img2/a1.jpg);
 }
 
-#section8 {
-    background-image: url(./img2/7.png);
+#section22 {
+    background-image: url(./img2/a2.jpg);
 }
 
-#section9 {
-    background-image: url(./img2/4.png);
+#section23 {
+    background-image: url(./img2/a3.jpg);
 }
 
-#section10 {
-    background-image: url(./img2/13.png);
+#section24 {
+    background-image: url(./img2/a4.jpg);
 }
 
-#section11 {
-    background-image: url(./img2/22.png);
+#section25 {
+    background-image: url(./img2/a5.jpg);
 }
 
-#section12 {
-    background-image: url(./img2/14.png);
+#section26 {
+    background-image: url(./img2/a6.jpg);
+}
+
+#section27 {
+    background-image: url(./img2/a7.jpg);
+}
+
+#section28 {
+    background-image: url(./img2/a8.jpg);
+}
+
+#section29 {
+    background-image: url(./img2/a9.jpg);
+}
+
+#section30 {
+    background-image: url(./img2/a10.jpg);
+}
+
+#section31 {
+    background-image: url(./img2/a11.jpg);
+}
+
+#section32 {
+    background-image: url(./img2/a12.jpg);
+}
+
+#section33 {
+    background-image: url(./img2/a13.jpg);
+}
+
+#section34 {
+    background-image: url(./img2/a14.jpg);
 }
