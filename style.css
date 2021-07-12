@@ -607,6 +607,7 @@ input[type=reset] {
     div.rows {
         display: flex;
         align-items: center;
+        margin-top: -140px;
     }
 }
 
