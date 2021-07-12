@@ -179,6 +179,12 @@ a.active-links {
 }
 
 .navbar ul li {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+    min-width: 80px;
     display: inline-block;
     padding: 0 10px;
     /* here to control the space between each menu */
