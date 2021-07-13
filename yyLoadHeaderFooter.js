@@ -20,7 +20,7 @@ function loadHeaderFooter() {
             });
     }
 
-    if (document.querySelector("myBtn")) {
+    if (document.getElementById("myBtn")) {
         fetch("/yyTop.html")
             .then(response => {
                 return response.text()
