@@ -186,7 +186,7 @@ a.active-links {
     text-align: center;
     min-width: 80px;
     display: inline-block;
-    padding: 0 10px;
+    /*padding: 0 10px;*/
     /* here to control the space between each menu */
 }
 
@@ -238,6 +238,7 @@ a.active-links {
     }
     .navbar ul li a.dropdown-a {
         text-align: left;
+        padding: 0;
     }
 }
 
@@ -276,6 +277,8 @@ a.active-links {
         /*margin-top: 30px;*/
         width: 100%;
         /*border-bottom: 1px solid rgba(255,255,255,0.3);*/
+        font-size: 36px;
+        font-weight: 800;
     }
     .navbar ul li a {
         /*padding: 0;*/
