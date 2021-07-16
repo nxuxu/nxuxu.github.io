@@ -614,7 +614,7 @@ div.slide #slide2-right {
     }
 
     div.slide #slide2-middle {
-        width: 480px;
+        width: min(480px, 90vw);
         position: absolute;
         left: 50%;
         top: 44%;
@@ -630,12 +630,28 @@ div.slide #slide2-right {
         position: absolute;
     }
     div.slide .text-size {
-        font-size: 28px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 30px;
     }
 }
 
-
+@media(max-width: 768px) {
+    div.slide #slide1-right {
+        padding: 0 5%;
+    }
+    div.slide #slide2-right {
+        padding: 0 5%;
+    }
+    div.slide .text-size {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+@media(max-width: 488px) {
+    div.slide #slide2-right {
+        top: 70%;
+    }
+}
 .intro-text {
     display: flex;
     padding: 180px 150px;
