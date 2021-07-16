@@ -779,6 +779,23 @@ input[type=reset] {
 }
 
 
+/* about page */
+
+.main-about {
+    padding-top: 300px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-text {
+    padding-right: 200px;
+}
+
+.about-contact {
+    line-height: 48px;
+}
+
+
 /* Homepage image grid END*/
 
 
