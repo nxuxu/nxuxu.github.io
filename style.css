@@ -691,7 +691,6 @@ input[type=reset] {
 /* Create two equal columns that sits next to each other */
 
 .columns {
-    float: left;
     padding-left: 0;
 }
 
@@ -726,6 +725,10 @@ input[type=reset] {
     padding: 30px;
 }
 
+#full-width-gif {
+    margin-top: -220px;
+    padding: 0 80px 0;
+}
 
 /* Add padding BETWEEN each column */
 
@@ -775,6 +778,10 @@ input[type=reset] {
         font-size: 28px;
         line-height: 32px;
         letter-spacing: 0.5px;
+    }
+    #full-width-gif {
+        margin-top: 0;
+        padding: 0;
     }
 }
 
