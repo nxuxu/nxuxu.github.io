@@ -338,6 +338,12 @@ a.active-links {
     .fun {
         display: none;
     }
+    .navbar a.navbar-brand {
+        padding: 0 18px;
+    }
+    .youtube {
+        padding: 80px 5px;
+    }
 }
 
 
@@ -635,22 +641,37 @@ div.slide #slide2-right {
 }
 
 @media(max-width: 768px) {
+    div.slide #slide1-left {
+        top: 18%;
+    }
     div.slide #slide1-right {
+        top: 33%;
+        padding: 0 5%;
+    }
+    div.slide #slide2-left {
+        top: 8%;
         padding: 0 5%;
     }
     div.slide #slide2-right {
         padding: 0 5%;
     }
     div.slide .text-size {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 28px;
     }
+    div.slide .title-size {
+        font-size: 36px;
+    }
+    div#slide1 {
+        height: 600px;
+    }
 }
+
 @media(max-width: 550px) {
     div.slide #slide2-left {
         font-size: 36px;
+        line-height: 48px;
     }
-
     div.slide #slide2-middle {
         width: 90vw;
     }
@@ -679,7 +700,7 @@ div.slide #slide2-right {
     margin: auto;
     text-align: center;
     max-width: 1300px;
-    padding: 0 40px 50px;
+    padding: 120px 40px;
 }
 
 input[type=email] {
