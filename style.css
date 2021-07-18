@@ -66,7 +66,7 @@ p {
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 40px;
-    padding-left: 3px;
+    /*padding-left: 3px;*/
     /* letter-spacing:1px; */
     word-break: normal;
 }
@@ -398,7 +398,6 @@ a.active-links {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding-left: 16px;
     width: 100%;
 }
 
@@ -415,7 +414,18 @@ a.active-links {
     position: relative;
 }
 
+#bottom a {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    padding:0 10px;
+}
 
+@media (max-width: 768px) {
+    #bottom a {
+        padding:0 5px;
+    }
+}
 /* footer and copyright END */
 
 
@@ -874,7 +884,7 @@ div#lifecycle1to4 {
 
 .full-text {
     width: 100%;
-    padding: 60px;
+    padding: 0 60px;
 }
 
 
@@ -897,9 +907,19 @@ div#lifecycle1to4 {
 
 #full-width-gif {
     margin-top: -220px;
-    padding: 0 80px 0;
+    padding: 0 120px 0;
+    position: relative;
+    z-index: -1;
 }
 
+h2#cycle-text {
+    text-align: center;
+}
+
+div#material-text {
+    line-height: 40px;
+    padding: 0 0 0 80px;
+}
 
 /* Add padding BETWEEN each column */
 
@@ -920,7 +940,7 @@ div#lifecycle1to4 {
 
 @media screen and (max-width: 991px) {
     div#lifecycle1to4 {
-        margin-top: 20px;
+        margin-top: 0;
     }
     .rows {
         margin: 50px 0;
@@ -942,9 +962,10 @@ div#lifecycle1to4 {
         width: 100%;
         margin-top: -20px;
     }
-    .col-text p {
+    .columns p {
         font-size: 20px;
         line-height: 28px;
+        padding-left: 0;
     }
     .intro-text {
         padding: 80px 40px;
@@ -955,7 +976,7 @@ div#lifecycle1to4 {
         letter-spacing: 0.5px;
     }
     .full-text {
-        padding: 0 40px;
+        padding: 0 20px;
         width: 100%;
     }
     p .full-text p {
@@ -970,6 +991,12 @@ div#lifecycle1to4 {
     }
     #full-width-gif {
         margin-top: 0;
+        padding: 0;
+    }
+    h2#cycle-text {
+        text-align: left;
+    }
+    div#material-text {
         padding: 0;
     }
 }
