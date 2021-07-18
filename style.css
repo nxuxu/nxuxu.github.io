@@ -646,7 +646,11 @@ div.slide #slide2-right {
         line-height: 28px;
     }
 }
-@media(max-width: 488px) {
+@media(max-width: 550px) {
+    div.slide #slide2-left {
+        font-size: 36px;
+    }
+
     div.slide #slide2-middle {
         width: 90vw;
     }
