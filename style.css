@@ -514,6 +514,7 @@ div.slide .hcenter {
     transform: translateX(-50%);
 }
 
+
 /*div.slide .left {
     margin-left: 9%;
     width: 23%;
@@ -541,7 +542,9 @@ div.slide .text-size {
     font-weight: 300;
 }
 
+
 /* Specific settings for each slide */
+
 div.slide #slide1-left {
     top: 50%;
     margin-left: 9%;
@@ -567,7 +570,7 @@ div.slide #slide2-middle {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 }
 
 div.slide #slide2-right {
@@ -576,7 +579,9 @@ div.slide #slide2-right {
     position: absolute;
 }
 
+
 /* Specific settings for each slide (responsive) */
+
 @media(max-width: 991px) {
     div.slide {
         height: 900px;
@@ -585,19 +590,16 @@ div.slide #slide2-right {
         background-repeat: no-repeat;
         position: relative;
     }
-
     div.slide .vcenter {
         top: unset;
         transform: unset;
     }
-
     div.slide #slide1-left {
         top: 20%;
         margin-left: 0;
         width: 100%;
         text-align: center;
     }
-
     div.slide #slide1-right {
         top: 45%;
         margin-left: 0;
@@ -605,22 +607,19 @@ div.slide #slide2-right {
         text-align: center;
         padding: 0 10%;
     }
-
     div.slide #slide2-left {
         top: 8%;
         margin-left: 0;
         width: 100%;
         text-align: center;
     }
-
     div.slide #slide2-middle {
         width: min(480px, 90vw);
         position: absolute;
         left: 50%;
         top: 44%;
-        transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
     }
-
     div.slide #slide2-right {
         top: 75%;
         margin-left: 0;
@@ -647,11 +646,13 @@ div.slide #slide2-right {
         line-height: 28px;
     }
 }
+
 @media(max-width: 488px) {
     div.slide #slide2-right {
         top: 70%;
     }
 }
+
 .intro-text {
     display: flex;
     padding: 180px 150px;
@@ -677,15 +678,17 @@ input[type=email] {
     padding: 16px 32px;
     margin: 4px 2px;
     box-sizing: border-box;
-    border: 2px solid #4CAF50;
+    border: 2px solid black;
     background: transparent;
     font-size: 24px;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 input[type=button],
 input[type=submit],
 input[type=reset] {
-    background-color: #4CAF50;
+    background-color: black;
     border: none;
     color: white;
     padding: 18px 32px;
@@ -693,6 +696,8 @@ input[type=reset] {
     margin: 4px 2px;
     cursor: pointer;
     font-size: 24px;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 @media screen and (min-width: 1300px) {
@@ -840,6 +845,7 @@ input[type=reset] {
     margin-top: -220px;
     padding: 0 80px 0;
 }
+
 
 /* Add padding BETWEEN each column */
 
