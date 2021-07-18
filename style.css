@@ -614,7 +614,7 @@ div.slide #slide2-right {
         text-align: center;
     }
     div.slide #slide2-middle {
-        width: min(480px, 90vw);
+        width: 480px;
         position: absolute;
         left: 50%;
         top: 44%;
@@ -646,6 +646,11 @@ div.slide #slide2-right {
         line-height: 28px;
     }
 }
+@media(max-width: 488px) {
+    div.slide #slide2-middle {
+        width: 90vw;
+    }
+}
 
 @media(max-width: 488px) {
     div.slide #slide2-right {
@@ -674,7 +679,8 @@ div.slide #slide2-right {
 }
 
 input[type=email] {
-    width: min(800px, 50vw);
+    /*width: min(800px, 50vw);*/
+    width: 800px;
     padding: 16px 32px;
     margin: 4px 2px;
     box-sizing: border-box;
@@ -698,6 +704,12 @@ input[type=reset] {
     font-size: 24px;
     -webkit-appearance: none;
     border-radius: 0;
+}
+
+@media screen and (max-width: 800px) {
+    input[type=email] {
+        width: 800px;
+    }
 }
 
 @media screen and (min-width: 1300px) {
