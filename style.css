@@ -506,7 +506,7 @@ a.active-links {
     /* solution: object-fit */
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .video-container {
@@ -724,7 +724,7 @@ div.slide #contactinfo {
     margin: auto;
     text-align: center;
     max-width: 1300px;
-    padding: 100px 5px;
+    padding: 80px 5px;
 }
 
 input[type=email] {
