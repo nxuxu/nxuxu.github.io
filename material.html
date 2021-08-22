@@ -3,16 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>material repeel</title>
-    <link rel="shortcut icon" href=" " type="image/x-icon">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, target-densityDpi=device-dpi">
+    <title>Material - PEELSPHERE</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet"> -->
+
+    <!-- new font Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
 
     <!--  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Loading the header and footer (AJAX) -->
+    <script src="yyLoadHeaderFooter.js"></script>
+
+    <script src="yyGif.js"></script>
 
 </head>
 
@@ -21,113 +31,209 @@
 
     <!-- Header -->
     <header>
-        <div class=" ">
-            <!-- Navbar -->
 
-            <nav class="navbar">
-                <div class="nav-main">
-                    <div class="topnav-centered">
-                        <a href="index.html" class="navbar-brand"><img src="./img/logo3.png" alt="repeel" class=" "></a>
-                        <!--<a href="#" class="navbar-brand"><img src="" style="width: 50px; vertical-align: middle;">ningyuan xu</a>-->
-                    </div>
-
-                    <ul>
-                        <li><a href="material.html" class=" ">Material</a></li>
-                        <!--  <li><a href=" ">Inspiration</a></li>  -->
-
-                        <li class="dropdown "><a href=" " class=" ">
-                            Inspiration</a>
-                            <div class="dropdown-content">
-                                <a href="texture.html" class="dropdown-a ">Texture</a>
-                                <a href="application.html" class="dropdown-a ">Application</a>
-                            </div>
-
-                        </li>
-
-                        <li><a href=" ">Journal</a></li>
-                        <li><a href=" ">About</a></li>
-                    </ul>
-                    <button class="navbar-toggler">
-                            <span>     </span>
-                        </button>
-                </div>
-
-                <!-- Navbar toggler script-->
-                <script>
-                    const navbarToggler = document.querySelector(".navbar-toggler");
-                    const navbarMenu = document.querySelector(".navbar ul");
-                    const navbarLinks = document.querySelectorAll(".navbar a");
-
-                    navbarToggler.addEventListener("click", navbarTogglerClick);
-
-                    function navbarTogglerClick() {
-                        navbarToggler.classList.toggle("open-navbar-toggler");
-                        navbarMenu.classList.toggle("open");
-                    }
-
-                    // navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
-
-                    function navbarLinkClick() {
-                        if (navbarMenu.classList.contains("open")) {
-                            navbarToggler.click();
-                        }
-                    }
-                </script>
-
-            </nav>
-
-            <div class="fun">
-                <!--  <img src="./img/logo3.png" alt="repeel" class=" "> -->
-                <h1>The Material</h1>
-            </div>
-
-            <div class="video-container">
-                <video autoplay muted loop id="video-bg">
-                <source src="head.mp4" type="video/mp4">
-                </video>
-            </div>
-
-        </div>
     </header>
+
+    <!-- header video only in home page -->
+
+
+    <!--
+    <div class="fun">
+        <p>From nature to life</p>
+        <p style="font-size: 18px;"><img src="img/arrow_black.png" alt="" style="padding-right: 10px; margin-bottom: -4px;">Request for samples</p>
+    </div>
+    -->
+
+
+
+    <div class="video-container">
+        <video autoplay muted loop playsinline webkit-playsinline id="video-bg">
+    <source src="head3.mp4" type="video/mp4">
+    </video>
+    </div>
 
     <!-- Page content -->
 
+    <!-- Introduction Text Section -->
 
 
+    <!-- 
+    <div class="intro-text">
+        <div>
+            <p>The innovation and design of APeel will revolutionize people’s lifestyles. With our biodegradable material, we are reducing pollution and lifting the material limitations of leather, plastic and traditional textile.</p>
+        </div>
+    </div>
+     -->
+
+
+    <!-- End of Introduction Text Section -->
+
+
+
+    <!-- Lifecycle Section -->
 
     <div class="main">
-        <br><br> <br><br><br>
-        <div class="rows ">
-            <!-- Line1 Left -->
-            <div class="columns col-text">
-                <div class="con-text" style="padding: 0;">
-                    <h2> Material capability</h2>
-                    <br>
-                    <p> Banana and orange peel or soy-milk are combined with a natural binding agent as the substrate. The resulting composite is fully biodegradable and can be easily reused after the re-cooking process.</p>
+
+        <div id="lifecycle1to4">
+
+            <div class="rows">
+                <!-- Line1 Left -->
+                <div class="columns col-img">
+                    <div class="con-img">
+                        <!-- <img src="./img/cycle1.gif" alt="LifeCycle1 Biowaste" style="width:100%"> -->
+                        <video muted playsinline preload="auto" style="width:100%" id="gif1" class="gif">
+                        <source src="/img/cycle1.webm" type="video/webm">
+                        <source src="/img/cycle1.mp4" type="video/mp4">
+                        <img src="./img/cycle1.gif" alt="LifeCycle1 Biowaste" style="width:100%">
+                    </video>
+                    </div>
+                </div>
+
+                <!-- Line1 right -->
+                <div class="columns col-text">
+                    <div class="con-text">
+
+                        <h2>MIX</h2>
+                        <p> The fruit wastes are mixed and ground into fine pieces</p>
+                    </div>
+                </div>
+                <!-- Line1 END -->
+            </div>
+            <!-- ROW1 END -->
+
+            <div class="rows" style="flex-direction: row-reverse;">
+                <!-- Line2 Left -->
+                <div class="columns col-img">
+                    <div class="con-img">
+                        <!-- <img src="./img/cycle2.gif" alt="LifeCycle1 Biowaste" style="width:100%"> -->
+                        <video muted playsinline preload="auto" style="width:100%" id="gif2" class="gif">
+                        <source src="/img/cycle2.webm" type="video/webm">
+                        <source src="/img/cycle2.mp4" type="video/mp4">
+                        <img src="./img/cycle2.gif" alt="LifeCycle1 Biowaste" style="width:100%">
+                    </video>
+                    </div>
+                </div>
+                <!-- Line2 right -->
+                <div class="columns col-text">
+                    <div class="con-text">
+
+                        <h2>BLEND</h2>
+                        <p> They are further blended with bio-binder into a mixture</p>
+                    </div>
+                </div>
+                <!-- Line2 END -->
+            </div>
+            <!-- ROW2 END -->
+
+            <div class="rows ">
+                <!-- Line1 Left -->
+                <div class="columns col-img">
+                    <div class="con-img">
+                        <!-- <img src="./img/cycle3.gif" alt="LifeCycle1 Biowaste" style="width:100%"> -->
+                        <video muted playsinline preload="auto" style="width:100%" id="gif3" class="gif">
+                        <source src="/img/cycle3.webm" type="video/webm">
+                        <source src="/img/cycle3.mp4" type="video/mp4">
+                        <img src="./img/cycle3.gif" alt="LifeCycle1 Biowaste" style="width:100%">
+                    </video>
+                    </div>
+                </div>
+                <!-- Line1 right -->
+                <div class="columns col-text">
+                    <div class="con-text">
+                        <h2>FORM</h2>
+                        <p> The mixture then forms sheets of materials </p>
+                    </div>
+                </div>
+                <!-- Line1 END -->
+            </div>
+            <!-- ROW3 END -->
+
+            <div class="rows" style="flex-direction: row-reverse;">
+                <!-- Line2 Left -->
+                <div class="columns col-img">
+                    <div class="con-img">
+                        <!-- <img src="./img/cycle4.gif" alt="LifeCycle1 Biowaste" style="width:100%"> -->
+                        <video muted playsinline preload="auto" style="width:100%" id="gif4" class="gif">
+                        <source src="/img/cycle4.webm" type="video/webm">
+                        <source src="/img/cycle4.mp4" type="video/mp4">
+                        <img src="./img/cycle4.gif" alt="LifeCycle1 Biowaste" style="width:100%">
+                    </video>
+                    </div>
+                </div>
+                <!-- Line2 right -->
+                <div class="columns col-text">
+                    <div class="con-text">
+                        <h2>DESIGN</h2>
+                        <p> The material then made into a great range of products </p>
+                    </div>
+                </div>
+                <!-- Line2 END -->
+            </div>
+            <!-- ROW4 END -->
+        </div>
+
+
+
+        <!-- Summary -->
+        <div id="full-width-gif">
+            <video muted playsinline preload="auto" style="width:100%" id="gif5" class="gif">
+                <source src="/img/cycle5.webm" type="video/webm">
+                <source src="/img/cycle5.mp4" type="video/mp4">
+                <img src="./img/cycle5.gif" alt="LifeCycle1 Biowaste" style="width:100%">
+            </video>
+        </div>
+        <div class="columns full-text">
+            <div class=" ">
+                <div style="margin-top:-10px;">
+                    <h2 id="cycle-text">CYCLE</h2>
+                    <p> With recycle, redesign and remanufacturing, the material enters a closed-looped system, extending its lifespan and realize its full potential.
+                        <br> <br> We believe that sustainable material development must be accompanied by outstanding performance, aesthetics and versatility that enables timeless design.
+                    </p>
+                </div>
+
+                <img src="img/parameter.png" alt="LifeCycle1 Biowaste" style="width:100%; margin: auto; margin-top: 120px;">
+                <br><br>
+                <div class=" ">
+
+                    <p>
+                        PEELSPHERE™ is available in a range of colours and patterns. We only use natural or Oeko-Tex certified dyes. Laser-cut and printing make PEELSPHERE™ unique and beautiful. PEELSPHERE™ can also be embroidered, woven, and sewn into end products that are
+                        biodegradable and timeless.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- material item-->
+        <div class="rows full-text" style="margin-top: 120px;">
+            <!-- Left -->
+            <div class="col-img" style="margin-bottom: 40px;">
+                <img src="./img2/29.jpg" alt="LifeCycle1 Biowaste" style="width:100%">
+            </div>
+            <!-- right -->
+
+            <div class="col-text">
+                <div id="material-text" style="font-size:18px;">
+                    <h2>PEELSPHERE™</h2>
+
+                    <p style="color:grey;"> Color <span style="color:black;">Natual Indigo</span></p>
+                    <p style="color:grey;"> Product Code <span style="color:black;">BM-Lea-IN</span></p>
+                    <p style="color:grey;"> Composition <span style="color:black;">Alage</span></p>
+                    <p style="color:grey;"> Weight <span style="color:black;">768 gsm</span></p>
+
                 </div>
             </div>
-            <!-- Line1 END -->
-        </div>
-        <!-- ROW1 END -->
-        <br><br>
-        <div class="rows ">
-            <img src="./img/material.png" alt="LifeCycle1 Biowaste" style="width:100%">
-        </div>
-        <br> <br><br><br>
-
-        <div class="rows ">
-            <!-- Line1 Left -->
-            <div class="columns col-text">
-                <div class="con-text" style="padding: 0;">
-                    <h2>Classic Editions</h2>
-                </div>
-            </div>
-            <!-- Line1 END -->
+            <!-- END -->
         </div>
 
 
+
+        <!-- material two items -->
+        <!-- 
         <div class="rows">
-            <!-- Line2 right -->
+       
             <div class="columns" style="width:50%">
                 <div class=" ">
                     <img src="./img2/29.png" alt="LifeCycle1 Biowaste" style="width:90%">
@@ -135,7 +241,6 @@
                     <p> Banana and orange peel or soy-milk</p>
                 </div>
             </div>
-            <!-- Line2 Left -->
             <div class="columns" style="width:50%">
                 <div class=" ">
                     <img src="./img2/28.png" alt="LifeCycle1 Biowaste" style="width:90%">
@@ -143,22 +248,20 @@
                     <p> Banana and orange peel or soy-milk</p>
                 </div>
             </div>
-            <!-- Line2 END -->
         </div>
-        <!-- ROW2 END -->
+        -->
 
-        <br><br><br>
         <!-- Summary -->
-        <div class="columns full-text" style="padding: 24px;">
+        <div class="columns full-text" style="margin-top: 40px;">
             <div class=" ">
-                <p> Resulting composite is fully biodegradable and can be easily reused after the re-cooking process. It is a 100% bio-degradable, zero waste natural product. Moreover, the bio-material provides similar toughness, durability and water resistance
-                    as normal leather material, especially it conserves fruitiness smell, refined texture and feels very good on touch.
+                <p> We have planned a full life cycle assessment (LCA) for PEELSPHERE™. With the closed-looped ecosystem, our goal is to minimize carbon footprint and set new standards to reach the next level of sustainability and circular design.
                 </p>
             </div>
         </div>
-        <br><br><br><br><br>
 
     </div>
+
+
     <!--  End of grid-->
 
 
@@ -183,46 +286,29 @@
 
 
     <!-- scroll to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <svg width="30px" height="20px" viewBox="0 0 32 18" xml:space="preserve" >
-                <!-- stroke-dasharray="5,5" -->
-            <polyline fill="none" stroke="black"  stroke-width="3"  points="
-            1,18 16,1 31,18 "/>
-            </svg>
+    <button id="myBtn" title="Go to top">
+            
         </button>
 
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            scrollFunction()
-        };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 
     <!-- footer -->
-    <footer>
-        <div class="containerCenter">
-            <p id="bottom" style="color:black; text-align: center; line-height: 36px; font-size:18px; font-weight: 400; letter-spacing: 1px;">
-                <a title="" href="https://www.instagram.com" class="socialmeida-a" target="_blank" rel="nofollow noopener noreferrer ">
-                    <span style="font-size:28px; text-decoration: none; color:black;" class="fa fa-instagram"></span></a><br>
-                <a href="#" style="text-decoration: none;"></a>Impressum</a><br><br>© 2020 repeel ™ reserved<br>
 
-            </p>
+    <!-- <footer>
+    </footer> -->
+
+    <div class="containerCenter">
+        <div id="bottom">
+
+            <div style="color:black; padding-bottom:10px;">
+                <a href="https://www.instagram.com/peelsphere/">INSTAGRAM</a>
+                <a href="https://www.linkedin.com/company/74717008/">LINKEDIN</a>
+                <a href="/impressum.html">IMPRESSUM</a>
+            </div>
+            © 2021 PEELSPHERE™ RESERVED
+            <img style=" width: 100vw; padding-top: 10px; margin-bottom: -20px;" src="/img/peelsphere.svg" alt="PEELSPHERE" class=" ">
         </div>
-    </footer>
+    </div>
     <!-- footer END -->
 
 
