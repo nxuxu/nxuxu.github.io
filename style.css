@@ -169,6 +169,24 @@ a.active-links {
     height: 52px;
 }
 
+.navbar a:hover span {
+    border-bottom: 2px solid #1c3a13;
+    padding: 2px 0 1px;
+}
+
+
+/* .navbar a span:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #019fb6;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.navbar a:hover span:after {
+    transform: scaleX(1);
+} */
+
 .navbar ul {
     float: right;
     list-style: none;
@@ -252,6 +270,10 @@ a.active-links {
     }
     .navbar a.navbar-white {
         color: grey;
+    }
+    .navbar a:hover span {
+        border-bottom: 4px solid #1c3a13;
+        padding: 2px 0 0;
     }
     .navbar ul {
         width: 100%;
