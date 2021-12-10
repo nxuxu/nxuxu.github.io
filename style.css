@@ -1154,6 +1154,18 @@ div#material-text {
     background-image: url(./img2/t18.jpg);
 }
 
+#section18 {
+    background-image: url(./img2/tnew1.jpg);
+}
+
+#section19 {
+    background-image: url(./img2/tnew2.jpg);
+}
+
+#section20 {
+    background-image: url(./img2/tnew3.jpg);
+}
+
 
 /* application*/
 
@@ -1211,4 +1223,12 @@ div#material-text {
 
 #section34 {
     background-image: url(./img2/a14.jpg);
+}
+
+#section35 {
+    background-image: url(./img2/anew1.jpg);
+}
+
+#section36 {
+    background-image: url(./img2/anew2.jpg);
 }
