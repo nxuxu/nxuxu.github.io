@@ -23,7 +23,10 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Loading the header and footer (AJAX) -->
-    <script src="yyLoadHeaderFooter.js"></script>
+    <script src="/yyLoadHeaderFooter.js"></script>
+
+    <!-- Utils for validating email address -->
+    <script src="/contactFormCheck.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-44NW5SYRTT"></script>
@@ -134,7 +137,7 @@
             <p id="contactinfo"> Subscribe and be the first to know </p>
         </div>
         <div style="padding-top:10vh; position: relative;">
-            <form style="text-align: center;" action="https://formsubmit.co/4bb1eda0bd0a704f57bdda329723f1cd" method="POST" target="_blank">
+            <form style="text-align: center;" name="contactForm" action="https://formsubmit.co/4bb1eda0bd0a704f57bdda329723f1cd" method="POST" onsubmit="return validateForm();" target="_blank">
                 <input type="email" id="email" name="email" value="" required placeholder="email@example.com">
                 <input type="submit" value="Sign up" style="margin-left: -6px;">
             </form>
