@@ -621,6 +621,13 @@ div.slide #slide2-right {
     position: absolute;
 }
 
+div.slide #slide3-left {
+    top: 20%;
+    margin-left: 9%;
+    width: 65%;
+    position: absolute;
+}
+
 div.slide #contactinfo {
     font-size: 36px;
     text-align: center;
@@ -751,7 +758,7 @@ div.slide #contactinfo {
 
 input[type=email] {
     /*width: min(800px, 50vw);*/
-    width: 800px;
+    width: 600px;
     padding: 16px 32px;
     margin: 4px 2px;
     box-sizing: border-box;
@@ -815,7 +822,7 @@ input[type=reset] {
     div.rows {
         display: flex;
         align-items: center;
-        margin-top: -140px;
+        margin-top: 0px;
     }
 }
 
@@ -910,6 +917,15 @@ div#lifecycle1to4 {
 .full-text {
     width: 100%;
     padding: 0 60px;
+}
+
+
+/* Create three equal columns that sits next to each other */
+
+.column3 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
 }
 
 
@@ -1243,4 +1259,117 @@ div#material-text {
 
 #section39 {
     background-image: url(./img2/anew5.jpg);
+}
+
+
+/* Slideshow utils */
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    /*    min-width: 100%;
+    min-height: 100vh;*/
+    overflow: hidden;
+    position: absolute;
+    /* to make the video centered */
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    /*height: 100%;*/
+    /* solution: object-fit */
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Caption dots */
+
+.slideshow-dots {
+    padding: 12px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+
+.slideshow-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.slideshow-active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.slideshow-fade {
+    animation-name: slideshow-fade;
+    animation-duration: 2.0s;
+}
+
+@keyframes slideshow-fade {
+    from {
+        opacity: .9
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.slideshow-full-screen-container {
+    /*background-color: #f1a5a5;*/
+    z-index: 0;
+    /* width: 100%;*/
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    line-height: 0;
+}
+
+
+/* END Slideshow utils */
+
+
+/* For kering logo slide */
+
+div.slide img.logo {
+    width: 40%
+}
+
+div#kering-text {
+    position: relative;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 991px) {
+    div.slide img.logo {
+        width: 80%
+    }
+    div#kering-text {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
 }
