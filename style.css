@@ -883,7 +883,7 @@ input[type=reset] {
 div#lifecycle1to4 {
     max-width: 1000px;
     margin: auto;
-    margin-top: 180px;
+    margin-top: 10px;
 }
 
 .rows {
@@ -1259,6 +1259,25 @@ div#material-text {
 
 #section39 {
     background-image: url(./img2/anew5.jpg);
+}
+
+
+/* added 2023 March */
+
+#section40 {
+    background-image: url(./img2/anew6.jpg);
+}
+
+#section41 {
+    background-image: url(./img2/anew7.jpg);
+}
+
+#section42 {
+    background-image: url(./img2/anew8.jpg);
+}
+
+#section43 {
+    background-image: url(./img2/anew9.jpg);
 }
 
 
