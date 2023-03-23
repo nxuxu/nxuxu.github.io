@@ -1382,6 +1382,25 @@ div#kering-text {
     margin-top: 100px;
 }
 
+div.slide img.kering {
+    width: 40%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 15%;
+}
+
+div.slide img.tuv {
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+
+div.slide div.main p.kering_t {
+    text-align: center;
+    padding-top: 120px;
+}
+
 @media screen and (max-width: 991px) {
     div.slide img.logo {
         width: 80%
@@ -1390,6 +1409,19 @@ div#kering-text {
         position: relative;
         margin-top: 0;
         margin-bottom: 100px;
+    }
+    div.slide img.kering,
+    div.slide img.tuv {
+        width: 80%;
+        padding-top: 40px;
+    }
+    div.slide div.main p.kering_t {
+        padding: 0 5% 80px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    div.tuv_t {
+        padding: 50px 5% 50px;
     }
 }
 
