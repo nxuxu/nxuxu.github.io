@@ -920,6 +920,17 @@ div#lifecycle1to4 {
 }
 
 
+/* columns for sustainable page's image and text */
+
+.col-img2 {
+    width: 20%;
+}
+
+.col-text2 {
+    width: 80%;
+}
+
+
 /* Create three equal columns that sits next to each other */
 
 .column3 {
@@ -990,13 +1001,15 @@ div#material-text {
     .columns {
         width: 100%;
     }
-    .col-img {
+    .col-img,
+    .col-img2 {
         width: 100%;
     }
     .con-img {
         padding: 0;
     }
-    .col-text {
+    .col-text,
+    .col-text2 {
         width: 100%;
     }
     .con-text {
@@ -1053,7 +1066,11 @@ div#material-text {
 }
 
 .about-text {
-    padding-right: 200px;
+    padding-right: 100px;
+}
+
+.about-text h2 {
+    font-weight: 200;
 }
 
 .about-contact {
